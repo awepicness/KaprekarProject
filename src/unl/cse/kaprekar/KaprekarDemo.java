@@ -10,7 +10,7 @@ public class KaprekarDemo {
 		}
 		
 		int n = Integer.parseInt(args[0]);
-		if(KaprekarUtils.isKaprekar(n)) {
+		if(KaprekarUtils.isKaprekar(n) == 1) {
 			System.out.printf("%d is a Kaprekar Number!\n", n);
 		} else {
 			System.out.printf("%d is not a Kaprekar Number!\n", n);

@@ -22,7 +22,7 @@ public class KaprekarUtils {
 	 * @return <code>true</code> if <code>n</code> is a Kaprekar Number, 
 	 * <code>false</code> otherwise.
 	 */
-	public static boolean isKaprekar(int n) {
+	public static int isKaprekar(int n) {
 		
 		if(n < 1); {
 			return 0;
@@ -35,14 +35,14 @@ public class KaprekarUtils {
 		long first, second;
 		for(int i=1; i<=numDigits; i++) {
 			modulus *= 10;
-			frist = square / modlus;
+			first = square / modulus;
 			second = square % modulus;
 			if(first > 0 &&
-			   first + second = n) {
-				return true;
+			   first + second == n) {
+				return 1;
 			}
 		}
-		return false;
+		return 0;
 		
 	}
 	
