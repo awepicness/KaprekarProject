@@ -53,6 +53,7 @@ public class TestKaprekarUtils {
 	@Parameters
 	public static Collection<Object[]> generateData() {
 		Collection<Object[]> data = new ArrayList<Object[]>();
+		//run a for loop for variable i starting at -10, where i is less than or equal to the smaller of two numbers: 10000 or 100000 (10000)
 		for(int i=-10; i<=Math.min(UPPER_BOUND, MAX_UPPER_BOUND); i++) {			
 			Object[] testData;
 			if(KAPREKAR_NUMBERS.contains(i)) {
